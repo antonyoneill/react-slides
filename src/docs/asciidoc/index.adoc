@@ -1,0 +1,31 @@
+:revnumber: {project-version}
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: ../java]
+:navigation:
+:menu:
+:status:
+:icons: font
+
+= : Introduction to the React world
+
+== Overviews
+
+* <<ecmascript>>
+* <<typescript>>
+* <<extended-syntax>>
+* <<react>>
+* <<redux>>
+* <<webpack>>
+
+include::chapters/ecmascript.adoc[]
+
+include::chapters/typescript.adoc[]
+
+include::chapters/extended-syntax.adoc[]
+
+include::chapters/react.adoc[]
+
+include::chapters/redux.adoc[]
+
+include::chapters/webpack.adoc[]

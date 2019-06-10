@@ -1,0 +1,4 @@
+[[extended-syntax]]
+== Extended Syntax
+
+* Why we have HTML inside of JavaScript..

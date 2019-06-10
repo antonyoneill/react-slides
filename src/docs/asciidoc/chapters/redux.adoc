@@ -1,0 +1,6 @@
+[[redux]]
+== Redux
+
+* Concepts behind state management
+* Problem it solves
+* How it works
