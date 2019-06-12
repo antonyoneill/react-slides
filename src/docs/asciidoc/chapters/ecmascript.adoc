@@ -1,4 +1,60 @@
 [[ecmascript]]
 == ECMAScript
 
-* Breif history of JavaScript & ECMAScript
+* Ecma International creates standards for technology
+* ECMA-262 defines ECMAScript - Language Specification
+* Several versions of ECMAScript over the years
+
+=== JavaScript Engines
+
+* JavaScript Engines conform to ECMAScript specification
+* Browsers contain JavaScript Engines, https://en.wikipedia.org/wiki/ECMAScript#Conformance[conforming to different standards]
+* All browsers support minimum of ES5
+* Node.js is a runtime built on Chrome's v8 Engine
+
+=== ECMAScript 2016, 2017, 2018...
+
+* People are proposing more changes to ECMAScript specification
+* https://github.com/tc39/proposals[State of proposals]
+[start=0]
+. Strawperson - Input into specification
+. Proposal - Making case for addition, describe, identify challenges
+. Draft - Precise syntax & semanitcs defined
+. Candidate - Request for refinement & feedback
+. Finished - Ready for inclusion into ECMAScript standard
+* Arrow Functions
++
+[source,javascript]
+----
+const greeter = (name) => { return "Hello " + name }
+----
+* Template Literals
++
+[source,javascript]
+----
+const greeter = (name) => { return `Hello ${name}` }
+----
++
+[source,javascript]
+----
+const greeter = name => `Hello ${name}`
+----
+
+=== Transpilation
+
+* Developers love to write using the next best thing
+* Web Browsers are not all created equal and have poor support for new features
+* Transpilation uses AST to prepare ES6+ code for browsers
+* Tools like `babel` for ES6+, `tsc` for TypeScript
+
+For example
+[source,javascript]
+----
+// Before transpilation: ES6
+const greeter = name => `Hello ${name}`
+
+// After transpliation: ES5
+var greeter = function greeter(name) {
+  return "Hello ".concat(name);
+};
+----

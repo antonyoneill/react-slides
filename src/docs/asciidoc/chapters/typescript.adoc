@@ -1,4 +1,13 @@
 [[typescript]]
 == TypeScript
 
-* Why TS is awesome
+* A superset of ECMAScript
+* OpenSource project, backed by Microsoft
+* Designed to provide compilation time type confidence
+* No more "if it looks like a duck, it's a duck"
++
+[source,typescript]
+----
+const thing: Duck = pond.fetchAThing();
+----
+* Has own transpiler `tsc`

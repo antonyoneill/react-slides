@@ -7,9 +7,10 @@ ifndef::sourcedir[:sourcedir: ../java]
 :status:
 :icons: font
 
-= : Introduction to the React world
+= Introduction to the React world
 
-== Overviews
+
+== Overview
 
 * <<ecmascript>>
 * <<typescript>>
